@@ -272,10 +272,15 @@ header i
     margin-top: -3em;
     width: 100%s;
     position:relative;
+    padding-top: 1em;
 }
 .menu_title i
 {
     font-size: 1.8em;
+}
+.menu_title h1
+{
+    font-size: 1.7em;
 }
 main
 {
@@ -291,7 +296,7 @@ main
 {
     text-transform: uppercase;
     text-align: start;
-    font-size: 1.4em;
+    font-size: 1.2em;
     display: block;
     width: 2.4em;
     border-bottom: 5px solid #73d6c6;
