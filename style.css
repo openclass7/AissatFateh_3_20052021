@@ -251,6 +251,12 @@
     {
         margin-bottom:0.2em ;
     }
+    footer p,nav a,.order a ,footer a
+    {
+        cursor: pointer;
+      
+        z-index: 100;
+    }
 
 /*CSS Menu à la française*/
 #title
