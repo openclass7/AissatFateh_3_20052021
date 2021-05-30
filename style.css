@@ -4,7 +4,7 @@
  #99E2D0 BLUE CLAIRE
 
 */
-@media screen and (max-width: 1025px)/*425*/
+@media screen and (max-width: 1400px)/*425*/
 {
    body
     {
@@ -28,9 +28,10 @@
         
         font-size: 1em;
         color: grey;
-        border:1px solid #ddd7d7 ;
-        background-color: #ddd7d7;
-        padding: .7em;
+        border:1px solid #E4E4E4 ;
+        background-color: #E4E4E4;
+        padding:1em;
+        box-shadow: inset 0px 20px 10px -15px
     }
     .fa-map-marker-alt
     {
@@ -84,38 +85,49 @@
         font-weight: 600;
         font-stretch: condensed;
     }
-    nav div
+    nav i
     {
+        margin-right:0.6em 
+    } 
+    .choice 
+    {
+        position: relative;
+        display: flex;
         margin: auto;
         width: 75%;
         border: 1px solid #f8f9fa;
         background: #f8f9fa;
         text-align: center;
         border-radius: 1.5em;
-        padding: 2em;
+        padding: 1.5em;
         margin-bottom: 1em;
         box-shadow:3px 3px 3px 3px #F2F2F2;
+
     }
-    nav div
+    .choice:hover
     {
-        display: flex;
-      
-       
+        background: rgb(227, 221, 233);
     }
-   nav i
+    .choice:hover i
     {
-        margin-right:0.6em         
+        color:#9356DC  ;
     }
-    .one
+    .number
     {
-        margin-left: -2.8em;
-        margin-right: .7em;
-        display: block;
         background:#9356DC ;
         border-radius: 50%;
         width: 20px;
+        height: 20px;
         color: #ffffff;
         padding: 3px;
+        position: absolute;
+        left: -13px;
+
+       /* margin-left: -2.8em;
+        margin-right: .7em;
+        display: block;
+        
+        padding: 3px;*/
     }   
     section
     {
@@ -191,7 +203,13 @@
     .empty_icon:hover  .full_icon
     {
         visibility: visible;
-        color:#b42e8e ;
+        font-size: 1em;
+        animation: colors 0.5s   ease-in-out infinite;
+    }
+    @keyframes colors 
+    {
+        0% { color:#FF79DA; }
+        100% {color: #9356DC;} 
     }
 
     .sticker
@@ -238,7 +256,7 @@
         padding-left: 1em;
         padding-top: 1em;
         padding-bottom: 3em;
-        background: #413b3b;
+        background: #353535;
         color: #FFFFFF;
         margin-top: -1.2em;
     }
@@ -254,8 +272,6 @@
     footer p,nav a,.order a ,footer a
     {
         cursor: pointer;
-      
-        z-index: 100;
     }
 
 /*CSS Menu à la française*/
@@ -264,6 +280,11 @@
     margin-top: 30px;
     display: flex;
     flex-direction: row;
+}
+
+.title i
+{
+    color: #363636;
 }
 header i
 {
@@ -357,7 +378,7 @@ main
     font-size: 1em;
 }
 .meal :nth-child(2)
-{
+{ 
     font-weight: bold;
     transition: transform 1s;
 }
@@ -369,16 +390,14 @@ main
     top: -1px;
     right: -2px;
     border-radius: 0 20px 20px 0;
-    height: 4.62em;
+    height:100%;
     display: flex;
     justify-content: center;
     align-items: center;
      /*from -169px to -2*/
-     transition: width ease-in-out 1s;
+     transition: width ease-in-out 0.5s;
      width: 0em;
      opacity: 0;
-    
-   
 }
 .menu_meal:hover .slide
 {
@@ -388,12 +407,26 @@ main
 .menu_meal:hover .fa-check
 {
   transform: rotate(360deg);
+  width: fit-content;
+}
+.meal :nth-child(1),.menu_meal h2
+{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: start;
+    display: block;
+    width: auto;
+}
+.menu_meal:hover  h2, .menu_meal:hover .meal :nth-child(1)
+{
+    padding-right: 4em;
 }
 .menu_meal:hover .meal :nth-child(2)
 {
-  transform: translateX(-4em);
+  transform: translateX(-4em) ;
+  transition: transform 0.7s;
 }
-
 .slide i
 {
     transition:transform 1s;
@@ -402,21 +435,22 @@ main
     border-radius: 50%;
     color: #73d6c6;
     padding: 0.2em;
-   
 }
-
 .loader_wrapper
 {
     width: 100%;
-    height: 100%;
+    z-index: 100;
     background: #7a9bc2;
     display: flex;
     justify-content: center;
     align-items: center;
     position: fixed;
-    margin-top: -4.15em;
-    animation: view 5s linear;
-    opacity: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    animation: view 1s linear;
+    visibility: hidden;
 }
 .loader
 {
@@ -429,9 +463,8 @@ main
     background:linear-gradient(#242744, #a09faa, #314a68 );
     display: block;
     position:relative;
-    animation: loader 5s   linear;
-    top: 0;
-    /*z-index: 0;*/
+    animation: loader 1s   linear;
+    top: 0;  
 }
 
 @keyframes view 
@@ -449,4 +482,10 @@ main
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
   }
+  .dish:hover
+  {
+    transform: scale(1.03);
+    transition:  transform cubic-bezier(0.85, 0.03, 0.4, 0.96) 10ms;
+  }
+  
 }
