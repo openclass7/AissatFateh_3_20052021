@@ -73,6 +73,7 @@
     .btn__menu:hover a
     {
         box-shadow: 0 0 15px #808080;
+        opacity: 0.;
     }
     nav h1, section h1
     {
@@ -291,7 +292,7 @@
     flex-direction: row;
 }
 
-.title i
+#title i
 {
     color: #363636;
 }
@@ -458,21 +459,21 @@ main
     bottom: 0;
     left: 0;
     right: 0;
-    animation: view 1s linear;
+    animation: view 3s linear;
     visibility: hidden;
 }
 .loader
 {
     border: 15px solid #7a9bc2;
     border-radius: 50%;
-    border-top: 15px solid linear-gradient(#242744, #a09faa, #314a68 );
-    border-bottom: 15px solid linear-gradient(#242744, #a09faa, #314a68 );
-    width: 100px;
-    height: 100px;
-    background:linear-gradient(#242744, #a09faa, #314a68 );
+    border-top: 15px solid linear-gradient( #FF79DA,#99E2D0,#9356DC  );
+    border-bottom: 15px solid linear-gradient( #FF79DA,#99E2D0,#9356DC );
+    width: 200px;
+    height: 200px;
+    background:linear-gradient( #FF79DA,#99E2D0,#9356DC );
     display: block;
     position:relative;
-    animation: loader 1s   linear;
+    animation: loader 2s   linear;
     top: 0;  
 }
 
