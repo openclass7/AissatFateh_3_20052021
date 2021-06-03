@@ -1,9 +1,3 @@
-/*
- #9356DC MAUVE
- #FF79DA ROSE
- #99E2D0 BLUE CLAIRE
-*/
-
 body
 {
     margin: 0;
@@ -136,12 +130,6 @@ nav i
     padding: 3px;
     position: absolute;
     left: -13px;
-
-   /* margin-left: -2.8em;
-    margin-right: .7em;
-    display: block;
-    
-    padding: 3px;*/
 }   
 section
 {
@@ -172,7 +160,6 @@ section h1
     justify-content: space-between;
     margin-top: 0em;
     margin-bottom: 0em;
-
 }
 .dish p
 {
@@ -206,7 +193,6 @@ section img
 }
 .full_icon 
 {
-  
    font-size: 1em;
    visibility: hidden;
    position: absolute;
@@ -250,12 +236,7 @@ section img
     top:1em ;
     right:0em;
     border-radius: 5px;
-
 }
-
-
-
-
 footer div
 {
     display: flex;
@@ -290,7 +271,6 @@ footer
     display: flex;
     flex-wrap: wrap;
     justify-content:space-around;
-
 }
 footer i
 {
@@ -301,202 +281,44 @@ footer p, footer div
 {
     margin-bottom:0.2em ;
 }
-footer p,nav a,.order a ,footer a,.menu_meal,.heart_icon
+footer p,nav a,.order a ,footer a,.heart_icon
 {
     cursor: pointer;
 }
-
-/*CSS Menu à la française*/
-#title
-{
-margin-top: 30px;
-display: flex;
-flex-direction: row;
-}
-
-#title i
-{
-color: #363636;
-}
 header i
 {
-font-size:1.5em;
-margin-left: 0.5em; 
-}
-
-#menu_logo img
-{
-width: 45%;
-position: absolute;
-right: 30%;
-}
-
-.menu_first img
-{
-width: 100%;
-height: 18em;
-object-fit: cover;
-}
-
-.menu_title
-{
-font-family: 'Shrikhand', sans-serif;
-display: flex;
-justify-content: space-around;
-align-items: center;
-border-radius: 50px 50px 0 0;
-background: #F6F6F6;
-margin-top: -3em;
-width: 100%s;
-position:relative;
-padding-top: 1em;
-}
-.menu_title i
-{
-font-size: 1.8em;
-}
-.menu_title h1
-{
-font-size: 1.7em;
-}
-main
-{
-background: #F6F6F6;
-margin-top: 2em;
-padding-bottom: 6em;
-}
-.menu_dishes
-{
-margin-bottom: 3.5em;
-}
-.menu_dishes h1
-{
-text-transform: uppercase;
-text-align: start;
-font-size: 1.2em;
-display: block;
-width: 2.4em;
-border-bottom: 5px solid #73d6c6;
-padding-bottom: 0.3em; 
-margin-left: 1em;  
-}
-.meal
-{
-display: flex;
-justify-content: space-between;
-margin-top: 0em;
-}
-.menu_meal h2
-{
-margin-bottom: 0px;
-font-size: 1.2em;
-margin-bottom: -10px;
-margin-top: 10px;
-}
-.menu_meal
-{
-border: 1px solid #FFFFFF;
-width: 90%;
-margin: auto;
-padding: 0 10px 0 10px;
-border-radius: 20px;
-background: #FFFFFF;
-box-shadow: 5px 5px 5px #6b6565;
-margin-bottom: 1.2em;
-position: relative;
-}
-.meal p
-{
-font-size: 1em;
-}
-.meal :nth-child(2)
-{ 
-font-weight: bold;
-transition: transform 1s;
-}
-.slide
-{ 
-background: #73d6c6;
-border: 1px solid #73d6c6;
-position: absolute;
-top: -1px;
-right: -2px;
-border-radius: 0 20px 20px 0;
-height:100%;
-display: flex;
-justify-content: center;
-align-items: center;
- /*from -169px to -2*/
- transition: width ease-in-out 0.5s;
- width: 0em;
- opacity: 0;
-}
-.menu_meal:hover .slide
-{
-width: 4em;
-opacity: 1;
-}
-.menu_meal:hover .fa-check
-{
-transform: rotate(360deg);
-width: fit-content;
-}
-.meal :nth-child(1),.menu_meal h2
-{
-white-space: nowrap;
-overflow: hidden;
-text-overflow: ellipsis;
-text-align: start;
-display: block;
-width: auto;
-}
-.menu_meal:hover  h2, .menu_meal:hover .meal :nth-child(1)
-{
-padding-right: 4em;
-}
-.menu_meal:hover .meal :nth-child(2)
-{
-transform: translateX(-4em) ;
-transition: transform 0.7s;
-}
-.slide i
-{
-transition:transform 1s;
-font-size: 1.4em;
-background: #FFFFFF;
-border-radius: 50%;
-color: #73d6c6;
-padding: 0.2em;
+    font-size:1.5em;
+    margin-left: 0.5em; 
 }
 .loader_wrapper
 {
-width: 100%;
-z-index: 100;
-background: #7a9bc2;
-display: flex;
-justify-content: center;
-align-items: center;
-position: fixed;
-top: 0;
-bottom: 0;
-left: 0;
-right: 0;
-animation: view 3s linear;
-visibility: hidden;
+    width: 100%;
+    z-index: 100;
+    background: #7a9bc2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    animation: view 3s linear;
+    visibility: hidden;
 }
 .loader
 {
-border: 15px solid #7a9bc2;
-border-radius: 50%;
-border-top: 15px solid linear-gradient( #FF79DA,#99E2D0,#9356DC  );
-border-bottom: 15px solid linear-gradient( #FF79DA,#99E2D0,#9356DC );
-width: 200px;
-height: 200px;
-background:linear-gradient( #FF79DA,#99E2D0,#9356DC );
-display: block;
-position:relative;
-animation: loader 2s   linear;
-top: 0;  
+    border: 15px solid #7a9bc2;
+    border-radius: 50%;
+    border-top: 15px solid linear-gradient( #FF79DA,#99E2D0,#9356DC  );
+    border-bottom: 15px solid linear-gradient( #FF79DA,#99E2D0,#9356DC );
+    width: 200px;
+    height: 200px;
+    background:linear-gradient( #FF79DA,#99E2D0,#9356DC );
+    display: block;
+    position:relative;
+    animation: loader 2s   linear;
+    top: 0;  
 }
 
 @keyframes view 
@@ -505,73 +327,19 @@ top: 0;
     visibility: visible; }
 
 100% { opacity: 0;
-visibility: hidden; }
+    visibility: hidden; }
  
 }
 
 @keyframes loader
 {
-0% { transform: rotate(0deg); }
-100% { transform: rotate(360deg); }
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
 .dish:hover
 {
 transform: scale(1.03);
 transition:  transform cubic-bezier(0.85, 0.03, 0.4, 0.96) 0.1s;
-}
-/*affichage avec delay page secondaire entrées plats, desserts et */
-
-.menu_meal
-{
-  animation: show 1s linear forwards;
-  opacity: 0;
-}
-
-
-@keyframes show {
-  0%{opacity: 0; }
-  100%{opacity: 1;}      
-}
-
-.starter > :nth-child(2)
-{
-    animation-delay: .5s;
-}
-.starter > :nth-child(3)
-{
-    animation-delay: 1s;
-}
-.starter > :nth-child(4)
-{
-    animation-delay: 1.5s;
-}
-.starter> :nth-child(5)
-{
-    animation-delay: 2s;
-}
-.food > :nth-child(2)
-{
-    animation-delay: 2.5s;
-}
-.food > :nth-child(3)
-{
-    animation-delay: 3s;
-}
-.food > :nth-child(4)
-{
-    animation-delay: 3.5s;
-}
-.afters > :nth-child(2)
-{
-    animation-delay: 4s;
-}
-.afters > :nth-child(3)
-{
-    animation-delay: 4.5s;
-}
-.afters > :nth-child(4)
-{
-    animation-delay: 5s;
 }
 /*breakpoint 1000px*/
 @media screen and (max-width: 1000px)
@@ -625,9 +393,6 @@ transition:  transform cubic-bezier(0.85, 0.03, 0.4, 0.96) 0.1s;
    #logo img
     {
         width: 50%;
-        display: block;
-        margin: auto;
-        margin-top: 2em;
     }
     #under_title 
     {
@@ -704,18 +469,11 @@ transition:  transform cubic-bezier(0.85, 0.03, 0.4, 0.96) 0.1s;
         padding: 3px;
         position: absolute;
         left: -13px;
-
-       /* margin-left: -2.8em;
-        margin-right: .7em;
-        display: block;
-        
-        padding: 3px;*/
     }   
     section
     {
         background:#f8f9fa ;
         padding-bottom: 2em;
-        
     }
     .dish a
     {
@@ -732,7 +490,6 @@ transition:  transform cubic-bezier(0.85, 0.03, 0.4, 0.96) 0.1s;
         justify-content: space-between;
         margin-top: 0em;
         margin-bottom: 0em;
-
     }
     .dish p
     {
@@ -741,7 +498,6 @@ transition:  transform cubic-bezier(0.85, 0.03, 0.4, 0.96) 0.1s;
         font-weight:bold;
         color: black;
         display: block;
-        /*padding-left: 0.8em;*/
     }
     .dish span
     {
@@ -754,7 +510,6 @@ transition:  transform cubic-bezier(0.85, 0.03, 0.4, 0.96) 0.1s;
         margin:1em;
         border-radius: 20px;
         margin-bottom: 20px;
-
     }
     section img
     {
@@ -766,7 +521,6 @@ transition:  transform cubic-bezier(0.85, 0.03, 0.4, 0.96) 0.1s;
     }
    .full_icon 
     {
-      
        font-size: 1em;
        visibility: hidden;
        position: absolute;
@@ -810,12 +564,7 @@ transition:  transform cubic-bezier(0.85, 0.03, 0.4, 0.96) 0.1s;
         top:1em ;
         right:0em;
         border-radius: 5px;
-
     }
-
-
-
-
     footer div
     {
         display: flex;
@@ -853,173 +602,10 @@ transition:  transform cubic-bezier(0.85, 0.03, 0.4, 0.96) 0.1s;
         font-size:15px; ;
     }
     
-    footer p,nav a,.order a ,footer a,.menu_meal,.heart_icon
+    footer p,nav a,.order a ,footer a,.heart_icon
     {
         cursor: pointer;
     }
-
-/*CSS Menu à la française*/
-#title
-{
-    margin-top: 30px;
-    display: flex;
-    flex-direction: row;
-}
-
-#title i
-{
-    color: #363636;
-}
-header i
-{
-    font-size:1.5em;
-    margin-left: 0.5em; 
-}
-
-#menu_logo img
-{
-    width: 45%;
-    position: absolute;
-    right: 30%;
-}
-
-.menu_first img
-{
-    width: 100%;
-    height: 18em;
-    object-fit: cover;
-}
-
-.menu_title
-{
-    font-family: 'Shrikhand', sans-serif;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    border-radius: 50px 50px 0 0;
-    background: #F6F6F6;
-    margin-top: -3em;
-    width: 100%s;
-    position:relative;
-    padding-top: 1em;
-}
-.menu_title i
-{
-    font-size: 1.8em;
-}
-.menu_title h1
-{
-    font-size: 1.7em;
-}
-main
-{
-    background: #F6F6F6;
-    margin-top: 2em;
-    padding-bottom: 6em;
-}
-.menu_dishes
-{
-    margin-bottom: 3.5em;
-}
-.menu_dishes h1
-{
-    text-transform: uppercase;
-    text-align: start;
-    font-size: 1.2em;
-    display: block;
-    width: 2.4em;
-    border-bottom: 5px solid #73d6c6;
-    padding-bottom: 0.3em; 
-    margin-left: 1em;  
-}
-.meal
-{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 0em;
-}
-.menu_meal h2
-{
-    margin-bottom: 0px;
-    font-size: 1.2em;
-    margin-bottom: -10px;
-    margin-top: 10px;
-}
-.menu_meal
-{
-    border: 1px solid #FFFFFF;
-    width: 90%;
-    margin: auto;
-    padding: 0 10px 0 10px;
-    border-radius: 20px;
-    background: #FFFFFF;
-    box-shadow: 5px 5px 5px #6b6565;
-    margin-bottom: 1.2em;
-    position: relative;
-}
-.meal p
-{
-    font-size: 1em;
-}
-.meal :nth-child(2)
-{ 
-    font-weight: bold;
-    transition: transform 1s;
-}
-.slide
-{ 
-    background: #73d6c6;
-    border: 1px solid #73d6c6;
-    position: absolute;
-    top: -1px;
-    right: -2px;
-    border-radius: 0 20px 20px 0;
-    height:100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-     /*from -169px to -2*/
-     transition: width ease-in-out 0.5s;
-     width: 0em;
-     opacity: 0;
-}
-.menu_meal:hover .slide
-{
-  width: 4em;
-  opacity: 1;
-}
-.menu_meal:hover .fa-check
-{
-  transform: rotate(360deg);
-  width: fit-content;
-}
-.meal :nth-child(1),.menu_meal h2
-{
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    text-align: start;
-    display: block;
-    width: auto;
-}
-.menu_meal:hover  h2, .menu_meal:hover .meal :nth-child(1)
-{
-    padding-right: 4em;
-}
-.menu_meal:hover .meal :nth-child(2)
-{
-  transform: translateX(-4em) ;
-  transition: transform 0.7s;
-}
-.slide i
-{
-    transition:transform 1s;
-    font-size: 1.4em;
-    background: #FFFFFF;
-    border-radius: 50%;
-    color: #73d6c6;
-    padding: 0.2em;
-}
 .loader_wrapper
 {
     width: 100%;
@@ -1071,59 +657,5 @@ main
     transform: scale(1.03);
     transition:  transform cubic-bezier(0.85, 0.03, 0.4, 0.96) 0.1s;
   }
-  /*affichage avec delay page secondaire entrées plats, desserts et */
-
- .menu_meal
-  {
-      animation: show 1s linear forwards;
-      opacity: 0;
-  }
- 
-  
-  @keyframes show {
-      0%{opacity: 0; }
-      100%{opacity: 1;}      
-  }
- 
-  .starter > :nth-child(2)
-  {
-    animation-delay: .5s;
-  }
-  .starter > :nth-child(3)
-  {
-    animation-delay: 1s;
-  }
-  .starter > :nth-child(4)
-   {
-    animation-delay: 1.5s;
-  }
-  .starter> :nth-child(5)
-  {
-    animation-delay: 2s;
-  }
-  .food > :nth-child(2)
-  {
-    animation-delay: 2.5s;
-  }
-  .food > :nth-child(3)
-  {
-    animation-delay: 3s;
-  }
-  .food > :nth-child(4)
-   {
-    animation-delay: 3.5s;
-  }
-  .afters > :nth-child(2)
-  {
-    animation-delay: 4s;
-  }
-  .afters > :nth-child(3)
-  {
-    animation-delay: 4.5s;
-  }
-  .afters > :nth-child(4)
-   {
-    animation-delay: 5s;
-  }
-  
+   
   }

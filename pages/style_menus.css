@@ -1,0 +1,699 @@
+body
+{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+header
+{
+    margin-top: 30px;
+}
+h1,p 
+{
+    text-align: center;
+}
+.btn__menu a
+{
+    display: block;
+    margin: auto;
+    text-align: center;
+    border: 1px solid  ;
+    background:linear-gradient(#FF79DA,#9356DC);
+    width: fit-content;
+    padding: 1.1em 2em;
+    border-radius: 5em;
+    color: white;
+    text-decoration: none;  
+}
+.btn__menu:hover a
+{
+    box-shadow: 0 0 15px #808080;
+    opacity: 0.;
+} 
+.full_icon 
+{
+   font-size: 1em;
+   visibility: hidden;
+   position: absolute;
+   right: 0px;
+}
+.empty_icon
+{
+    font-size: 2em;
+    position: relative;
+    color: #818a84;
+}
+.empty_icon:hover
+{
+    visibility: hidden;
+}
+.empty_icon:hover  .full_icon
+{
+    visibility: visible;
+    font-size: 1em;
+    animation: colors 0.5s   ease-in-out infinite;
+}
+@keyframes colors 
+{
+    0% { color:#FF79DA;
+    text-shadow: 0 0 5px grey; }
+    90%{color: #9356DC;}
+    100%  { color:#FF79DA;
+    text-shadow: 0 0 5px grey; }
+}
+
+footer div
+{
+    display: flex;
+    align-items:baseline ;
+}
+footer p
+{
+    display: block;
+    font-size: 1.2em;
+}
+footer h1
+{
+    font-family: 'Shrikhand', sans-serif;
+    font-size: 1.7em;
+    margin-bottom: 0.5em;
+    width: 100%;
+}
+footer *
+{
+    text-align: start;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+footer
+{
+    padding-left: 1em;
+    padding-top: 1em;
+    padding-bottom: 3em;
+    background: #353535;
+    color: #FFFFFF;
+    margin-top: -1.2em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+
+}
+footer i
+{
+    margin-right: 0.6em;
+    font-size:15px; ;
+}
+footer p, footer div
+{
+    margin-bottom:0.2em ;
+}
+footer p,footer a,.menu_meal,.heart_icon
+{
+    cursor: pointer;
+}
+#title
+{
+margin-top: 30px;
+display: flex;
+flex-direction: row;
+}
+
+#title i
+{
+color: #363636;
+}
+header i
+{
+font-size:1.5em;
+margin-left: 0.5em; 
+}
+
+#menu_logo img
+{
+width: 25%;
+position: absolute;
+right: 37.5%;
+}
+.menu_first, .menu_title,.btn__menu
+{
+    width: 100%;
+}
+
+.menu_first img
+{
+width: 100%;
+height: 18em;
+object-fit: cover;
+}
+
+.menu_title
+{
+font-family: 'Shrikhand', sans-serif;
+display: flex;
+justify-content: space-around;
+align-items: center;
+border-radius: 50px 50px 0 0;
+background: #F6F6F6;
+margin-top: -3em;
+width: 100%s;
+position:relative;
+padding-top: 1em;
+}
+.menu_title i
+{
+font-size: 1.8em;
+}
+.menu_title h1
+{
+font-size: 1.7em;
+}
+main
+{
+    background: #F6F6F6;
+    margin-top: 5%;
+    padding-bottom: 6em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    }
+    .menu_dishes
+    {
+        margin-bottom: 3.5em;
+        width: 30%;
+    }
+    .menu_dishes h1
+    {
+    text-transform: uppercase;
+    text-align: start;
+    font-size: 1.2em;
+    display: block;
+    width: 2.4em;
+    border-bottom: 5px solid #73d6c6;
+    padding-bottom: 0.3em; 
+    margin-left: 1em;  
+    }
+    .meal
+    {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0em;
+    }
+    .menu_meal h2
+    {
+    margin-bottom: 0px;
+    font-size: 1.2em;
+    margin-bottom: -10px;
+    margin-top: 10px;
+    }
+    .menu_meal
+    {
+    border: 1px solid #FFFFFF;
+    width: 90%;
+    margin: auto;
+    padding: 0 10px 0 10px;
+    border-radius: 20px;
+    background: #FFFFFF;
+    box-shadow: 5px 5px 5px #6b6565;
+    margin-bottom: 1.2em;
+    position: relative;
+    }
+    .meal p
+    {
+    font-size: 1em;
+    }
+    .meal :nth-child(2)
+    { 
+    font-weight: bold;
+    transition: transform 1s;
+    }
+    .slide
+    { 
+    background: #73d6c6;
+    border: 1px solid #73d6c6;
+    position: absolute;
+    top: -1px;
+    right: -2px;
+    border-radius: 0 20px 20px 0;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*from -169px to -2*/
+    transition: width ease-in-out 0.5s;
+    width: 0em;
+    opacity: 0;
+    }
+    .menu_meal:hover .slide
+    {
+    width: 4em;
+    opacity: 1;
+    }
+    .menu_meal:hover .fa-check
+    {
+    transform: rotate(360deg);
+    width: fit-content;
+    }
+    .meal :nth-child(1),.menu_meal h2
+    {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: start;
+    display: block;
+    width: auto;
+    }
+    .menu_meal:hover  h2, .menu_meal:hover .meal :nth-child(1)
+    {
+    padding-right: 4em;
+    }
+    .menu_meal:hover .meal :nth-child(2)
+    {
+    transform: translateX(-4em) ;
+    transition: transform 0.7s;
+    }
+    .slide i
+    {
+    transition:transform 1s;
+    font-size: 1.4em;
+    background: #FFFFFF;
+    border-radius: 50%;
+    color: #73d6c6;
+    padding: 0.2em;
+    }
+    .loader_wrapper
+    {
+    width: 100%;
+    z-index: 100;
+    background: #7a9bc2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    animation: view 3s linear;
+    visibility: hidden;
+    }
+    @keyframes view 
+    {
+    0% { opacity: 1;
+        visibility: visible; }
+
+    100% { opacity: 0;
+    visibility: hidden; }
+ 
+}
+/*affichage avec delay page secondaire entrées plats, desserts et */
+
+.menu_meal
+{
+  animation: show 1s linear forwards;
+  opacity: 0;
+}
+
+
+@keyframes show {
+  0%{opacity: 0; }
+  100%{opacity: 1;}      
+}
+
+.starter > :nth-child(2)
+{
+    animation-delay: .5s;
+}
+.starter > :nth-child(3)
+{
+    animation-delay: 1s;
+}
+.starter > :nth-child(4)
+{
+    animation-delay: 1.5s;
+}
+.starter> :nth-child(5)
+{
+    animation-delay: 2s;
+}
+.food > :nth-child(2)
+{
+    animation-delay: 2.5s;
+}
+.food > :nth-child(3)
+{
+    animation-delay: 3s;
+}
+.food > :nth-child(4)
+{
+    animation-delay: 3.5s;
+}
+.afters > :nth-child(2)
+{
+    animation-delay: 4s;
+}
+.afters > :nth-child(3)
+{
+    animation-delay: 4.5s;
+}
+.afters > :nth-child(4)
+{
+    animation-delay: 5s;
+}
+/*breakpoint 1000px*/
+@media screen and (max-width: 1000px)
+{
+    .menu_dishes
+    {
+        width: 45%;
+    }
+}
+@media screen and (max-width: 768px)
+{
+    #menu_logo img
+    {
+        width: 45%;
+        position: absolute;
+        right: 27.5%;
+    }
+    main
+    {
+        margin-top: 6%;
+    }
+    .menu_dishes
+    {
+        width: 100%;
+    }
+    footer div, footer p
+    {
+        width: 50%;
+        display:inline-block;
+    }
+    #propose
+    {
+        width: 85%;
+    }
+}
+/*breakpoint 660px*/
+@media screen and (max-width:660px)
+{
+    footer p, footer div
+    {
+        margin-bottom:0.2em ;
+        width: 90%;
+    }
+    footer h1
+    {
+        margin-left: 1.2em;
+    }
+}
+
+@media screen and (max-width: 426px)
+{
+    main
+    {
+        margin-top: 5%;
+    }
+    h1,p 
+    {
+        text-align: center;
+    }
+   .full_icon 
+    {
+      
+       font-size: 1em;
+       visibility: hidden;
+       position: absolute;
+       right: 0px;
+    }
+    .empty_icon
+    {
+        font-size: 2em;
+        position: relative;
+        color: #818a84;
+    }
+   .empty_icon:hover
+    {
+        visibility: hidden;
+    }
+    .empty_icon:hover  .full_icon
+    {
+        visibility: visible;
+        font-size: 1em;
+        animation: colors 0.5s   ease-in-out infinite;
+    }
+    @keyframes colors 
+    {
+        0% { color:#FF79DA;
+        text-shadow: 0 0 5px grey; }
+        90%{color: #9356DC;}
+        100%  { color:#FF79DA;
+        text-shadow: 0 0 5px grey; }
+    }
+    footer div
+    {
+        display: flex;
+        align-items:baseline ;
+    }
+    footer p
+    {
+        display: block;
+        font-size: 1.2em;
+    }
+    footer h1
+    {
+        font-family: 'Shrikhand', sans-serif;
+        font-size: 1.7em;
+        margin-bottom: 0.5em;
+    }
+    footer *
+    {
+        text-align: start;
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+    footer
+    {
+        padding-left: 1em;
+        padding-top: 1em;
+        padding-bottom: 3em;
+        background: #353535;
+        color: #FFFFFF;
+        margin-top: -1.2em;
+    }
+    footer i
+    {
+        margin-right: 0.6em;
+        font-size:15px; ;
+    }
+    
+    footer p,footer a,.menu_meal,.heart_icon
+    {
+        cursor: pointer;
+    }
+    #title
+    {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    #title i
+    {
+        color: #363636;
+    }
+    header i
+    {
+        font-size:1.5em;
+        margin-left: 0.5em; 
+    }
+    .menu_first img
+    {
+        width: 100%;
+        height: 18em;
+        object-fit: cover;
+    }
+
+    .menu_title
+    {
+        font-family: 'Shrikhand', sans-serif;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border-radius: 50px 50px 0 0;
+        background: #F6F6F6;
+        margin-top: -3em;
+        width: 100%s;
+        position:relative;
+        padding-top: 1em;
+    }
+    .menu_title i
+    {
+        font-size: 1.8em;
+    }
+    .menu_title h1
+    {
+        font-size: 1.7em;
+    }
+    .menu_dishes h1
+    {
+        text-transform: uppercase;
+        text-align: start;
+        font-size: 1.2em;
+        display: block;
+        width: 2.4em;
+        border-bottom: 5px solid #73d6c6;
+        padding-bottom: 0.3em; 
+        margin-left: 1em;  
+    }
+    .meal
+    {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 0em;
+    }
+    .menu_meal h2
+    {
+        margin-bottom: 0px;
+        font-size: 1.2em;
+        margin-bottom: -10px;
+        margin-top: 10px;
+    }
+    .menu_meal
+    {
+        border: 1px solid #FFFFFF;
+        width: 90%;
+        margin: auto;
+        padding: 0 10px 0 10px;
+        border-radius: 20px;
+        background: #FFFFFF;
+        box-shadow: 5px 5px 5px #6b6565;
+        margin-bottom: 1.2em;
+        position: relative;
+    }
+    .meal p
+    {
+        font-size: 1em;
+    }
+    .meal :nth-child(2)
+    { 
+        font-weight: bold;
+        transition: transform 1s;
+    }
+    .slide
+    { 
+        background: #73d6c6;
+        border: 1px solid #73d6c6;
+        position: absolute;
+        top: -1px;
+        right: -2px;
+        border-radius: 0 20px 20px 0;
+        height:100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /*from -169px to -2*/
+        transition: width ease-in-out 0.5s;
+        width: 0em;
+        opacity: 0;
+    }
+    .menu_meal:hover .slide
+    {
+    width: 4em;
+    opacity: 1;
+    }
+    .menu_meal:hover .fa-check
+    {
+    transform: rotate(360deg);
+    width: fit-content;
+    }
+    .meal :nth-child(1),.menu_meal h2
+    {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-align: start;
+        display: block;
+        width: auto;
+    }
+    .menu_meal:hover  h2, .menu_meal:hover .meal :nth-child(1)
+    {
+        padding-right: 4em;
+    }
+    .menu_meal:hover .meal :nth-child(2)
+    {
+    transform: translateX(-4em) ;
+    transition: transform 0.7s;
+    }
+    .slide i
+    {
+        transition:transform 1s;
+        font-size: 1.4em;
+        background: #FFFFFF;
+        border-radius: 50%;
+        color: #73d6c6;
+        padding: 0.2em;
+    }
+
+    @keyframes view 
+    {
+        0% { opacity: 1;
+            visibility: visible; }
+    
+        100% { opacity: 0;
+        visibility: hidden; }
+        
+    }
+    /*affichage avec delay page secondaire entrées plats, desserts et */
+
+    .menu_meal
+    {
+        animation: show 1s linear forwards;
+        opacity: 0;
+    }    
+    @keyframes show {
+        0%{opacity: 0; }
+        100%{opacity: 1;}      
+    }
+    
+    .starter > :nth-child(2)
+    {
+        animation-delay: .5s;
+    }
+    .starter > :nth-child(3)
+    {
+        animation-delay: 1s;
+    }
+    .starter > :nth-child(4)
+    {
+        animation-delay: 1.5s;
+    }
+    .starter> :nth-child(5)
+    {
+        animation-delay: 2s;
+    }
+    .food > :nth-child(2)
+    {
+        animation-delay: 2.5s;
+    }
+    .food > :nth-child(3)
+    {
+        animation-delay: 3s;
+    }
+    .food > :nth-child(4)
+    {
+        animation-delay: 3.5s;
+    }
+    .afters > :nth-child(2)
+    {
+        animation-delay: 4s;
+    }
+    .afters > :nth-child(3)
+    {
+        animation-delay: 4.5s;
+    }
+    .afters > :nth-child(4)
+    {
+        animation-delay: 5s;
+    }
+    
+  }
