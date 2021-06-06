@@ -66,9 +66,10 @@ h1,p
 .btn__menu:hover a
 {
     box-shadow: 0 0 15px #808080;
-    opacity: 0.;
+    opacity: 0.7;
 }
-nav{
+nav
+{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -96,7 +97,8 @@ nav a
 }
 nav i
 {
-    margin-right:0.6em 
+    margin-right:0.6em;
+    color: #747474;
 } 
 .choice 
 {
@@ -169,7 +171,6 @@ section h1
     font-weight:bold;
     color: black;
     display: block;
-    /*padding-left: 0.8em;*/
 }
 .dish span
 {
@@ -226,7 +227,7 @@ section img
 
 .sticker
 {
-    border: 1px palegreen;
+    border: 1px #99E2D0;
     background:#c1f5dc ;
     width: max-content;
     border-radius: 0px;
@@ -350,6 +351,7 @@ transition:  transform cubic-bezier(0.85, 0.03, 0.4, 0.96) 0.1s;
         width: 33%;
     }
 }
+/* css pour la version tablette*/
 @media screen and (max-width: 768px)
 {
     .choice 
@@ -388,275 +390,37 @@ transition:  transform cubic-bezier(0.85, 0.03, 0.4, 0.96) 0.1s;
     }
 }
 
-@media screen and (max-width: 426px)/*425*/
+/* css pour la version mobile*/
+
+@media screen and (max-width: 426px)
 {
 
    #logo img
     {
         width: 50%;
     }
-    #under_title 
-    {
-        
-        font-size: 1em;
-        color: grey;
-        border:1px solid #E4E4E4 ;
-        background-color: #E4E4E4;
-        padding:1em;
-        box-shadow: inset 0px 20px 10px -15px
-    }
-    .fa-map-marker-alt
-    {
-        margin-right:1em;
-    }
-    .order
-    {
-        background:#f8f9fa;
-        padding-top: 1.1em;
-        margin-top: -18px;
-        padding-bottom: 3.5em;
-        margin-bottom: -3.5em;
-    }
-    .order h1
-    {
-        font-size:1.7em ;
-    }
-    .order p
-    {
-        font-size:1.2em ;
-    }
-    h1,p 
-    {
-        text-align: center;
-    }
-    nav h1, section h1
-    {
-        text-align:start ;
-        margin-top: 2em;
-        margin-left: 0.5em;
-        padding-top:2em ;
-    }
-    nav a
-    {
-        text-decoration: none;
-        font-size: 1.1em;
-        color: #000000;
-        font-weight: 600;
-        font-stretch: condensed;
-    }
-    nav i
-    {
-        margin-right:0.6em 
-    } 
     .choice 
     {
         width: 75%;
-    }
-    .choice:hover
-    {
-        background: rgb(227, 221, 233);
-    }
-    .choice:hover i
-    {
-        color:#9356DC  ;
-    }
-    .number
-    {
-        background:#9356DC ;
-        border-radius: 50%;
-        width: 20px;
-        height: 20px;
-        color: #ffffff;
-        padding: 3px;
-        position: absolute;
-        left: -13px;
-    }   
-    section
-    {
-        background:#f8f9fa ;
-        padding-bottom: 2em;
-    }
-    .dish a
-    {
-       text-decoration: none;
-    }
-    .dish
-    {
-        position: relative;
-    }
-    .dish div
-    {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin-top: 0em;
-        margin-bottom: 0em;
-    }
-    .dish p
-    {
-        text-align: start;
-        font-size: 1.2em;
-        font-weight:bold;
-        color: black;
-        display: block;
-    }
-    .dish span
-    {
-        font-weight: normal;
-    }
-    section div
-    {
-        border: 3px solid white;
-        background: #FFFFFF;
-        margin:1em;
-        border-radius: 20px;
-        margin-bottom: 20px;
-    }
-    section img
-    {
-        width: 100%;
-       margin-top: 0px; 
-       border-radius: 20px 20px 0px 0px;
-       height: 10em;
-       object-fit: cover;
-    }
-   .full_icon 
-    {
-       font-size: 1em;
-       visibility: hidden;
-       position: absolute;
-       right: 0px;
-    }
-    .empty_icon
-    {
-        font-size: 2em;
-        position: relative;
-        color: #818a84;
-    }
-   .empty_icon:hover
-    {
-        visibility: hidden;
-    }
-    .empty_icon:hover  .full_icon
-    {
-        visibility: visible;
-        font-size: 1em;
-        animation: colors 0.5s   ease-in-out infinite;
-    }
-    @keyframes colors 
-    {
-        0% { color:#FF79DA;
-        text-shadow: 0 0 5px grey; }
-        90%{color: #9356DC;}
-        100%  { color:#FF79DA;
-        text-shadow: 0 0 5px grey; }
-    }
-
-    .sticker
-    {
-        border: 1px palegreen;
-        background:#c1f5dc ;
-        width: max-content;
-        border-radius: 0px;
-        padding: 0.5em 1em 0.5em 1em;
-        font-weight: bold;
-        color: rgb(44, 139, 116);
-        position: absolute;
-        top:1em ;
-        right:0em;
-        border-radius: 5px;
-    }
+    }    
     footer div
     {
         display: flex;
         align-items:baseline ;
     }
-    footer p
-    {
-        display: block;
-        font-size: 1.2em;
-    }
     footer h1
     {
-        font-family: 'Shrikhand', sans-serif;
-        font-size: 1.7em;
-        margin-bottom: 0.5em;
+        margin-left: 0.7em;
     }
     footer *
     {
         text-align: start;
-        text-decoration: none;
-        color: #FFFFFF;
     }
-    footer
-    {
-        padding-left: 1em;
-        padding-top: 1em;
-        padding-bottom: 3em;
-        background: #353535;
-        color: #FFFFFF;
-        margin-top: -1.2em;
-    }
-    footer i
-    {
-        margin-right: 0.6em;
-        font-size:15px; ;
-    }
-    
-    footer p,nav a,.order a ,footer a,.heart_icon
-    {
-        cursor: pointer;
-    }
-.loader_wrapper
-{
-    width: 100%;
-    z-index: 100;
-    background: #7a9bc2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    animation: view 3s linear;
-    visibility: hidden;
-}
-.loader
-{
-    border: 15px solid #7a9bc2;
-    border-radius: 50%;
-    border-top: 15px solid linear-gradient( #FF79DA,#99E2D0,#9356DC  );
-    border-bottom: 15px solid linear-gradient( #FF79DA,#99E2D0,#9356DC );
-    width: 200px;
-    height: 200px;
-    background:linear-gradient( #FF79DA,#99E2D0,#9356DC );
-    display: block;
-    position:relative;
-    animation: loader 2s   linear;
-    top: 0;  
-}
 
-@keyframes view 
-{
-    0% { opacity: 1;
-        visibility: visible; }
- 
-    100% { opacity: 0;
-    visibility: hidden; }
-     
-}
 
-@keyframes loader
- {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
-  .dish:hover
-  {
-    transform: scale(1.03);
-    transition:  transform cubic-bezier(0.85, 0.03, 0.4, 0.96) 0.1s;
-  }
+
+
+
+
    
   }
