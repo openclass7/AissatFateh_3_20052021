@@ -1,7 +1,6 @@
 body
 {
     margin: 0px;
-    padding: 0px;
     font-family: 'Roboto', sans-serif;
 }
 header
@@ -96,7 +95,6 @@ footer
     display: flex;
     flex-wrap: wrap;
     justify-content:space-around;
-
 }
 footer i
 {
@@ -113,26 +111,26 @@ footer p,footer a,.menu_meal,.heart_icon
 }
 #title
 {
-margin-top: 30px;
-display: flex;
-flex-direction: row;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
 }
 
 #title i
 {
-color: #363636;
+    color: #363636;
 }
 header i
 {
-font-size:1.5em;
-margin-left: 0.5em; 
+    font-size:1.5em;
+    margin-left: 0.5em; 
 }
 
 #menu_logo img
 {
-width: 25%;
-position: absolute;
-right: 37.5%;
+    width: 25%;
+    position: absolute;
+    right: 37.5%;
 }
 .menu_first, .menu_title,.btn__menu
 {
@@ -141,31 +139,31 @@ right: 37.5%;
 
 .menu_first img
 {
-width: 100%;
-height: 18em;
-object-fit: cover;
+    width: 100%;
+    height: 18em;
+    object-fit: cover;
 }
 
 .menu_title
 {
-font-family: 'Shrikhand', sans-serif;
-display: flex;
-justify-content: space-around;
-align-items: center;
-border-radius: 50px 50px 0 0;
-background: #F6F6F6;
-margin-top: -3em;
-width: 100%;
-position:relative;
-padding-top: 1em;
+    font-family: 'Shrikhand', sans-serif;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 50px 50px 0 0;
+    background: #F6F6F6;
+    margin-top: -3em;
+    width: 100%;
+    position:relative;
+    padding-top: 1em;
 }
 .menu_title i
 {
-font-size: 1.8em;
+    font-size: 1.8em;
 }
 .menu_title h1
 {
-font-size: 1.7em;
+    font-size: 1.7em;
 }
 main
 {
@@ -175,14 +173,14 @@ main
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    }
-    .menu_dishes
-    {
-        margin-bottom: 3.5em;
-        width: 30%;
-    }
-    .menu_dishes h1
-    {
+}
+.menu_dishes
+{
+    margin-bottom: 1.5em;
+    width: 30%;
+}
+.menu_dishes h1
+{
     text-transform: uppercase;
     text-align: start;
     font-size: 1.2em;
@@ -191,24 +189,24 @@ main
     border-bottom: 5px solid #99E2D0;
     padding-bottom: 0.3em; 
     margin-left: 1em;  
-    }
-    .meal
-    {
+}
+.meal
+{
     display: flex;
     justify-content: space-between;
     margin-top: 0em;
-    }
-    .menu_meal h4
-    {
+}
+.menu_meal h4
+{
     margin-bottom: 0px;
     font-size: 1.2em;
     margin-bottom: -10px;
     margin-top: 10px;
-    }
-    .menu_meal
-    {
+}
+.menu_meal
+{
     border: 1px solid #FFFFFA;
-    width: 90%;
+    width: 85%;
     margin: auto;
     padding: 0 10px 0 10px;
     border-radius: 20px;
@@ -216,18 +214,18 @@ main
     box-shadow: 5px 5px 5px #6b6565;
     margin-bottom: 1.2em;
     position: relative;
-    }
-    .meal p
-    {
+}
+.meal p
+{
     font-size: 1em;
-    }
-    .meal :nth-child(2)
-    { 
+}
+.meal :nth-child(2)
+{ 
     font-weight: bold;
     transition: transform 1s;
-    }
-    .slide
-    { 
+}
+.slide
+{ 
     background: #99E2D0;
     border: 1px solid #99E2D1;
     position: absolute;
@@ -238,50 +236,49 @@ main
     display: flex;
     justify-content: center;
     align-items: center;
-    /*from -169px to -2*/
     transition: width ease-in-out 1s;
     width: 0em;
     opacity: 0;
-    }
-    .menu_meal:hover .slide
-    {
+}
+.menu_meal:hover .slide
+{
     width: 4em;
     opacity: 1;
-    }
-    .menu_meal:hover .fa-check
-    {
+}
+.menu_meal:hover .fa-check
+{
     transform: rotate(360deg);
     width: fit-content;
-    }
-    .meal :nth-child(1),.menu_meal h4
-    {
+}
+.meal :nth-child(1),.menu_meal h4
+{
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     text-align: start;
     display: block;
     width: auto;
-    }
-    .menu_meal:hover  h4, .menu_meal:hover .meal :nth-child(1)
-    {
+}
+.menu_meal:hover  h4, .menu_meal:hover .meal :nth-child(1)
+{
     padding-right: 4em;
-    }
-    .menu_meal:hover .meal :nth-child(2)
-    {
+}
+.menu_meal:hover .meal :nth-child(2)
+{
     transform: translateX(-4em) ;
     transition: transform 1s;
-    }
-    .slide i
-    {
+}
+.slide i
+{
     transition:transform 1s;
     font-size: 1.4em;
     background: #FFFFFF;
     border-radius: 50%;
     color: #99E2D0;
     padding: 0.2em;
-    }
-    .loader_wrapper
-    {
+}
+.loader_wrapper
+{
     width: 100%;
     z-index: 100;
     background: #7a9bc2;
@@ -295,9 +292,9 @@ main
     right: 0;
     animation: view 3s linear;
     visibility: hidden;
-    }
-    @keyframes view 
-    {
+}
+@keyframes view 
+{
     0% { opacity: 1;
         visibility: visible; }
 
@@ -314,7 +311,8 @@ main
 }
 
 
-@keyframes show {
+@keyframes show 
+{
   0%{opacity: 0; }
   100%{opacity: 1;}      
 }
