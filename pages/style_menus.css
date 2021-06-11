@@ -42,10 +42,12 @@ h1,p
     position: relative;
     color: #818a84;
 }
+/* une autre option pour le remplissage du coeur
 .empty_icon:hover
 {
-   /*visibility: hidden;*/
-}
+   visibility: hidden;
+}*/
+
 /*animation coeur*/
 .empty_icon:hover  .full_icon
 {
@@ -60,28 +62,24 @@ h1,p
     0%
     {
          background:radial-gradient(#FF79DA,#FFFFFF ,#FFFFFF, #FFFFFF);
-         background-clip: text;
          -webkit-background-clip: text; 
          color: transparent;    
     }
     33%
     {
          background:radial-gradient(#FF79DA, #FF79DA, #FFFFFF, #FFFFFF);
-         background-clip: text;
          -webkit-background-clip: text; 
          color: transparent;    
     }
     66%
     {
          background:radial-gradient( #FF79DA, #FF79DA,   #FF79DA ,#FFFFFF);
-         background-clip: text;
          -webkit-background-clip: text; 
          color: transparent;    
     }
     100%
     {
          background:radial-gradient(#FF79DA, #9356DC);
-         background-clip: text;
          -webkit-background-clip: text; 
          color: transparent;    
     }
@@ -245,6 +243,7 @@ main
 {
     font-size: 1em;
 }
+/*animation slider*/
 .meal :nth-child(2)
 { 
     font-weight: bold;
@@ -302,15 +301,6 @@ main
     border-radius: 50%;
     color: #99E2D0;
     padding: 0.2em;
-}
-@keyframes view 
-{
-    0% { opacity: 1;
-        visibility: visible; }
-
-    100% { opacity: 0;
-    visibility: hidden; }
- 
 }
 /*affichage avec delay page secondaire entrées plats, desserts et */
 
@@ -439,46 +429,3 @@ main
 
   
   }
-/*
-
-.starter > :nth-child(2)
-{
-    animation-delay: .5s;
-}
-.starter > :nth-child(3)
-{
-    animation-delay: 1s;
-}
-.starter > :nth-child(4)
-{
-    animation-delay: 1.5s;
-}
-.starter> :nth-child(5)
-{
-    animation-delay: 2s;
-}
-.food > :nth-child(2)
-{
-    animation-delay: 2.5s;
-}
-.food > :nth-child(3)
-{
-    animation-delay: 3s;
-}
-.food > :nth-child(4)
-{
-    animation-delay: 3.5s;
-}
-.afters > :nth-child(2)
-{
-    animation-delay: 4s;
-}
-.afters > :nth-child(3)
-{
-    animation-delay: 4.5s;
-}
-.afters > :nth-child(4)
-{
-    animation-delay: 5s;
-}
-*/
