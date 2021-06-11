@@ -110,7 +110,7 @@ nav i
     border-radius: 1.5em;
     padding: 1.5em;
     margin-bottom: 1em;
-    box-shadow:3px 3px 3px 3px #F2F2F2;
+    box-shadow:1px 1px 3px 1px #F2F2F2;
 
 }
 .choice:hover
@@ -208,6 +208,7 @@ section img
 {
     visibility: hidden;
 }
+/*animation coeur*/
 .empty_icon:hover  .full_icon
 {
     visibility: visible;
@@ -290,6 +291,7 @@ header i
     font-size:1.5em;
     margin-left: 0.5em; 
 }
+/*animation loader arrière plan*/
 .loader_wrapper
 {
     width: 100%;
@@ -308,6 +310,15 @@ header i
     animation: view 3s linear;
     visibility: hidden;
 }
+@keyframes view 
+{
+0% { opacity: 1;
+    visibility: visible; }
+
+100% { opacity: 0;
+    visibility: hidden; }
+}
+/*animation loader disque*/
 .loader
 {
     border: 15px solid #7a9bc2;
@@ -318,19 +329,7 @@ header i
     display: block;
     position:relative;
     animation: loader 2s   linear;
-    top: 0;  
 }
-
-@keyframes view 
-{
-0% { opacity: 1;
-    visibility: visible; }
-
-100% { opacity: 0;
-    visibility: hidden; }
- 
-}
-
 @keyframes loader
 {
     0% { transform: rotate(0deg); }

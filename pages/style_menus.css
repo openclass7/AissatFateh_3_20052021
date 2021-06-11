@@ -44,21 +44,47 @@ h1,p
 }
 .empty_icon:hover
 {
-    visibility: hidden;
+   /*visibility: hidden;*/
 }
+/*animation coeur*/
 .empty_icon:hover  .full_icon
 {
     visibility: visible;
     font-size: 1em;
-    animation: colors 0.5s   ease-in-out infinite;
+    animation: backcolors 1s   linear ;
+    animation-fill-mode: forwards;
 }
-@keyframes colors 
+
+@keyframes backcolors 
 {
-    0% { color:#FF79DA;
-    text-shadow: 0 0 5px grey; }
-    90%{color: #9356DC;}
-    100%  { color:#FF79DA;
-    text-shadow: 0 0 5px grey; }
+    0%
+    {
+         background:radial-gradient(#FF79DA,#FFFFFF ,#FFFFFF, #FFFFFF);
+         background-clip: text;
+         -webkit-background-clip: text; 
+         color: transparent;    
+    }
+    33%
+    {
+         background:radial-gradient(#FF79DA, #FF79DA, #FFFFFF, #FFFFFF);
+         background-clip: text;
+         -webkit-background-clip: text; 
+         color: transparent;    
+    }
+    66%
+    {
+         background:radial-gradient( #FF79DA, #FF79DA,   #FF79DA ,#FFFFFF);
+         background-clip: text;
+         -webkit-background-clip: text; 
+         color: transparent;    
+    }
+    100%
+    {
+         background:radial-gradient(#FF79DA, #9356DC);
+         background-clip: text;
+         -webkit-background-clip: text; 
+         color: transparent;    
+    }
 }
 
 footer div
@@ -277,22 +303,6 @@ main
     color: #99E2D0;
     padding: 0.2em;
 }
-.loader_wrapper
-{
-    width: 100%;
-    z-index: 100;
-    background: #7a9bc2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    animation: view 3s linear;
-    visibility: hidden;
-}
 @keyframes view 
 {
     0% { opacity: 1;
@@ -319,43 +329,43 @@ main
 
 .starter > :nth-child(2)
 {
-    animation-delay: .5s;
+    animation-delay: .3s;
 }
 .starter > :nth-child(3)
 {
-    animation-delay: 1s;
+    animation-delay: .6s;
 }
 .starter > :nth-child(4)
 {
-    animation-delay: 1.5s;
+    animation-delay: .9s;
 }
 .starter> :nth-child(5)
 {
-    animation-delay: 2s;
+    animation-delay: 1.2s;
 }
 .food > :nth-child(2)
 {
-    animation-delay: 2.5s;
+    animation-delay: 1.5s;
 }
 .food > :nth-child(3)
 {
-    animation-delay: 3s;
+    animation-delay: 1.8s;
 }
 .food > :nth-child(4)
 {
-    animation-delay: 3.5s;
+    animation-delay: 2.1s;
 }
 .afters > :nth-child(2)
 {
-    animation-delay: 4s;
+    animation-delay: 2.4s;
 }
 .afters > :nth-child(3)
 {
-    animation-delay: 4.5s;
+    animation-delay: 2.7s;
 }
 .afters > :nth-child(4)
 {
-    animation-delay: 5s;
+    animation-delay: 3s;
 }
 /*breakpoint 1000px*/
 @media screen and (max-width: 1000px)
@@ -429,3 +439,46 @@ main
 
   
   }
+/*
+
+.starter > :nth-child(2)
+{
+    animation-delay: .5s;
+}
+.starter > :nth-child(3)
+{
+    animation-delay: 1s;
+}
+.starter > :nth-child(4)
+{
+    animation-delay: 1.5s;
+}
+.starter> :nth-child(5)
+{
+    animation-delay: 2s;
+}
+.food > :nth-child(2)
+{
+    animation-delay: 2.5s;
+}
+.food > :nth-child(3)
+{
+    animation-delay: 3s;
+}
+.food > :nth-child(4)
+{
+    animation-delay: 3.5s;
+}
+.afters > :nth-child(2)
+{
+    animation-delay: 4s;
+}
+.afters > :nth-child(3)
+{
+    animation-delay: 4.5s;
+}
+.afters > :nth-child(4)
+{
+    animation-delay: 5s;
+}
+*/
