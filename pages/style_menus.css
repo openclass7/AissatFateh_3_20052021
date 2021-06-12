@@ -244,11 +244,6 @@ main
     font-size: 1em;
 }
 /*animation slider*/
-.meal :nth-child(2)
-{ 
-    font-weight: bold;
-    transition: transform 1s;
-}
 .slide
 { 
     background: #99E2D0;
@@ -270,11 +265,22 @@ main
     width: 4em;
     opacity: 1;
 }
-.menu_meal:hover .fa-check
+/*animation: rotation de l'icone ok au survol*/
+.slide i
+{
+    font-size: 1.4em;
+    background: #FFFFFF;
+    border-radius: 50%;
+    color: #99E2D0;
+    width: fit-content;
+    padding: 0.2em;
+    transition:transform 1s;
+}
+.menu_meal:hover .slide i
 {
     transform: rotate(360deg);
-    width: fit-content;
 }
+/*animation: remplacement du texte par 3 points de suspension; ellipsis*/
 .meal :nth-child(1),.menu_meal h4
 {
     white-space: nowrap;
@@ -283,25 +289,24 @@ main
     text-align: start;
     display: block;
     width: auto;
+    transition: padding-right 1s;
 }
 .menu_meal:hover  h4, .menu_meal:hover .meal :nth-child(1)
 {
     padding-right: 4em;
+    
+}
+/*animation: glissement du tarif du droite à gauche*/
+.meal :nth-child(2)
+{ 
+    font-weight: bold;
+    transition: transform 1s;
 }
 .menu_meal:hover .meal :nth-child(2)
 {
     transform: translateX(-4em) ;
-    transition: transform 1s;
-}
-.slide i
-{
-    transition:transform 1s;
-    font-size: 1.4em;
-    background: #FFFFFF;
-    border-radius: 50%;
-    color: #99E2D0;
-    padding: 0.2em;
-}
+} 
+
 /*affichage avec delay page secondaire entrées plats, desserts et */
 
 .menu_meal
@@ -309,8 +314,6 @@ main
   animation: show 1s linear forwards;
   opacity: 0;
 }
-
-
 @keyframes show 
 {
   0%{opacity: 0; }
